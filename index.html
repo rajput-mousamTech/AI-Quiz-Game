@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥 AI Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="start-screen">
+            <h1>🔥 AI Quiz Game</h1>
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="quiz-box" class="hide">
+            <div class="question-box">
+                <h2 id="question">Question comes here</h2>
+                <ul id="options">
+                    <!-- options will be injected here -->
+                </ul>
+            </div>
+            <div class="info">
+                <p>Time: <span id="timer">15</span> sec</p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hide">
+            <h2>Quiz Completed! 🏁</h2>
+            <p>Your Score: <span id="final-score"></span></p>
+            <button onclick="restartQuiz()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
